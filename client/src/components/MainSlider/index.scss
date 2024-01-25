@@ -1,0 +1,89 @@
+.slider-main {
+     width: 100%;
+     height: 80vh;
+     background-image: url("https://preview.colorlib.com/theme/estore/assets/img/hero/h1_hero.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+     z-index: 0;
+
+     .slider-main-container {
+          width: 75%;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .slider-text {
+               width: 500px;
+               i {
+                    font-family: 'Yellowtail', cursive;
+                    font-size: 40px;
+                    color: #2577fd;
+               }
+
+               h1 {
+                    font-size: 100px;
+                    color: #1f2022;
+                    font-family: 'Playfair Display', serif;
+                    line-height: 100px;
+                    margin-top: 20px;
+               }
+
+               i {
+                    p {
+                         font-size: 20px;
+                         font-family: 'Playfair Display', serif;
+                         color: #313639;
+                         margin-top: 20px;
+                    }
+               }
+
+               button {
+                    width: 170px;
+                    height: 55px;
+                    background-color: #2577fd;
+                    border: none;
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: 600;
+                    border-radius: 24px;
+                    margin-top: 30px;
+               }
+          }
+     }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+     .slider-main-container {
+          width: 90% !important;
+          img {
+               width: 80% !important;
+          }
+
+          .slider-text {
+               max-width: 400px !important;
+
+               h1 {
+                    font-size: 74px !important;
+               }
+          }
+     }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+     .slider-main-container {
+          padding-top: 80px;
+          img {
+               display: none !important;
+          }
+
+          .slider-text {
+               h1 {
+                    font-size: 52px !important;
+                    line-height: 80px !important;
+               }
+          }
+     }
+}

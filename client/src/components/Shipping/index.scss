@@ -1,0 +1,44 @@
+.shipping-main-container {
+     max-width: 70%;
+     margin-left: auto;
+     margin-right: auto;
+     display: flex;
+     justify-content: space-between;
+     padding-top: 100px;
+     padding-bottom: 80px;
+
+     .shipping {
+          width: 260px;
+
+          i {
+               font-size: 32px;
+          }
+
+          h3 {
+               margin-top: 20px;
+               margin-bottom: 10px;
+               font-size: 20px;
+          }
+
+          p {
+               font-size: 16px;
+               color: #506172;
+          }
+     }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+     .shipping-main-container {
+          width: 90% !important;
+          margin-left: auto;
+          margin-right: auto;
+          flex-direction: column;
+          gap: 80px;
+
+          .shipping {
+               width: 100%;
+               margin-left: auto;
+               margin-right: auto;
+          }
+     }
+}

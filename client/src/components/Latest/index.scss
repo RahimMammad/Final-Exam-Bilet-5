@@ -1,0 +1,122 @@
+.latest-main {
+     width: 90%;
+     margin-left: auto;
+     margin-right: auto;
+     height: 441px;
+     background-image: url("https://preview.colorlib.com/theme/estore/assets/img/collection/latest-offer.png");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     display: flex;
+     position: relative;
+
+     .latest {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+              position: absolute;
+              bottom: -60px; 
+          }
+
+          .text {
+               max-width: 60%;
+               margin-left: auto;
+               margin-right: auto;
+               h1 {
+                    font-size: 45px;
+                    font-weight: 700;
+                    font-family: 'Playfair Display', serif;
+                    width: 400px;
+                    margin-bottom: 20px;
+               }
+          }
+
+          .inp-btn {
+               width: 500px;
+               position: relative;
+
+
+               input {
+                    width: 100%;
+                    height: 60px;
+                    border-radius: 24px;
+                    border: none;
+                    outline: none;
+                    padding-left: 20px;
+
+               }
+
+               button {
+                    position: absolute;
+                    width: 30%;
+                    right: 0;
+                    height: 100%;
+                    border-radius: 24px;
+                    border: none;
+                    background-color: #2577fd;
+                    color: #fff;
+                    font-size: 16px;
+               }
+          }
+     }
+}
+
+@media (min-width: 1450px) and (max-width: 1650px) {
+     .inp-btn {
+          width: 300px !important;
+     }
+}
+
+@media (min-width: 1200px) and (max-width: 1450px) {
+
+     .latest {
+          width: 45%;
+          margin-left: auto;
+          margin-right: auto;
+          justify-content: space-between !important;
+
+          .text {
+               h1 {
+                    width: 200px !important;
+                    font-size: 32px !important;
+               }
+          }
+
+          .inp-btn {
+               width: 250px !important;
+          }
+     }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+     .latest-main {
+          img {
+               display: none !important;
+          }
+
+          .latest {
+               width: 100%;
+               margin-left: auto;
+               margin-right: auto;
+               display: flex;
+               flex-direction: column !important;
+               gap: 20px;
+
+               .text {
+                    width: 100% !important;
+                    text-align: left !important;
+
+                    h1 {
+                         font-size: 28px !important;
+                         width: 230px !important;
+                    }
+               }
+
+               .inp-btn {
+                    width: 90% !important;
+               }
+          }
+     }
+}
